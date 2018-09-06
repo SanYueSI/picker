@@ -1,0 +1,74 @@
+<!--pages/deliveryReservation/deliveryReservation.wxml-->
+
+<view class='view'>
+  <text class='view-text'>预约信息</text>
+  <view class='view1'>
+
+    <view class='view3'>
+      <text>品种大类</text>
+      <picker value="{{index}}" range="{{array}}" bindchange='varietiesChange'>
+        <view>
+          <text>{{Varieties}}</text>
+          <image src='../../images/u105.png' />
+        </view>
+      </picker>
+
+    </view>
+
+    <view class='view3'>
+      <text>仓库</text>
+      <picker value="{{index}}" range="{{array}}" bindchange='warehouseChange'>
+        <view>
+          <text>{{Warehouse}}</text>
+          <image src='../../images/u105.png' />
+        </view>
+      </picker>
+    </view>
+
+
+    <view class='view3'>
+      <text>预约时间</text>
+      <picker mode="multiSelector" bindchange="bindMultiPickerChange" bindcolumnchange="bindMultiPickerColumnChange" value="{{multiIndex}}" range="{{multiArray}}">
+        <view>
+          <text>{{orderData}}</text>
+          <image src='../../images/u105.png' />
+        </view>
+      </picker>
+
+    </view>
+  </view>
+  <text class='view-text'>货物信息</text>
+  <scroll-view scroll-y="true">
+
+    <view wx:for="{{[1,2,3,4,5]}}" wx:for-item="item">
+      <view class="item-view">
+        <view class='item-view1'>
+          <view class='view1'>
+            <text class='text-key'>合同</text>
+            <text class='text-value'>1211111111111111</text>
+          </view>
+          <view class='view2'>
+            <text class='text-key2'>品种</text>
+            <text class='text-value2' >12341111111111156</text>
+          
+          </view>
+            <text class='text-value3'>准发</text>
+        </view>
+        <view class='item-view2'>
+          <view class='view1'>
+            <text class='text-key'>规格</text>
+            <text  class='text-value'>123456123456123456</text>
+          </view>
+          <view class='view4'>
+            <text class='text-key2'>牌号</text>
+            <text class='text-value2'>123456123456123456</text>
+          </view>
+          <view>
+          <text  class='text-key3'>量</text>
+            <text class='text-value3'>18吨</text>
+            </view>
+        </view>
+      </view>
+    </view>
+  </scroll-view>
+</view>

@@ -1,0 +1,42 @@
+{
+  "pages": [
+    "pages/delivery-reservation/delivery-reservation",
+    "pages/goods-apply-for/goods-apply-for",
+    "pages/login/login",
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/mycontract/mycontract",
+    "pages/home/home",
+    "pages/msg/msg",
+    "pages/my/my"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "小程序"
+  },
+  "tabBar": {
+    "backgroundColor": "#fffee",
+    "list": [
+      {
+        "pagePath": "pages/home/home",
+        "text": "首页",
+        "iconPath": "images/home.png",
+        "selectedIconPath": "images/s_home.png"
+      },
+      {
+        "pagePath": "pages/msg/msg",
+        "text": "消息",
+        "iconPath": "images/msg.png",
+        "selectedIconPath": "images/s_msg.png"
+      },
+      {
+        "pagePath": "pages/my/my",
+        "text": "我的",
+        "iconPath": "images/my.png",
+        "selectedIconPath": "images/s_my.png"
+      }
+    ]
+  }
+}

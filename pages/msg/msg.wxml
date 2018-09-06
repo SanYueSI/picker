@@ -1,0 +1,13 @@
+<!--pages/msg/msg.wxml-->
+<template name="odd">
+  <view> odd </view>
+</template>
+<template name="even">
+  <view wx:for="{{[1, 2, 3, 4, 5]}}">
+    <text>这是数据+{{item}}</text>
+  </view>
+</template>
+
+<block wx:for="{{[1, 2, 3, 4, 5]}}">
+  <template is="{{index % 2 == 0 ? 'even' : 'odd'}}" />
+</block>

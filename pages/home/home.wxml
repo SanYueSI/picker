@@ -1,0 +1,61 @@
+<!--pages/home/home.wxml-->
+<view class='content'>
+  <image src='../../images/bg.png' class='content_img'></image>
+  <view class='home_menu'>
+    <view class='home_menu_top'>
+      <view class='display order_details' bindtap='goodsApplyFor'>
+        <view class='goods_info'>
+          <view class='display goods_info_c'>
+            <image style='width:35px;height:35px' src='{{src}}'></image>
+          </view>
+          订货申请
+        </view>
+
+      </view>
+
+      <view class='display order_details'>
+        <view class='goods_info'>
+          <view class='display goods_info_c'>
+            <image style='width:35px;height:35px' src='{{src}}'></image>
+          </view>
+          提货预约
+        </view>
+
+      </view>
+    </view>
+    <view class='home_menu_top'>
+      <view class='display apply_for'>
+        <view class='goods_info'>
+          <view class='display goods_info_c'>
+            <image style='width:35px;height:35px' src='{{src}}'></image>
+          </view>
+          我的申请
+        </view>
+      </view>
+      <view class='display apply_for' bindtap='go2mycontract'>
+        <view class='goods_info'>
+          <view class='display goods_info_c'>
+            <image style='width:35px;height:35px' src='{{src}}'></image>
+          </view>
+          我的合同
+        </view>
+      </view>
+      <view class='display apply_for'>
+        <view class='goods_info'>
+          <view class='display goods_info_c'>
+            <image style='width:35px;height:35px' src='{{src}}'></image>
+          </view>
+          我的预约
+        </view>
+      </view>
+      <view class='display apply_for'>
+        <view class='goods_info'>
+          <view class='display goods_info_c'>
+            <image style='width:35px;height:35px' src='{{src}}'></image>
+          </view>
+          我的货物
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

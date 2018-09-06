@@ -1,0 +1,97 @@
+/* pages/newView/newView.wxss */
+.login{
+  flex-direction: column;
+   display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.userinfo-avatar {
+  width: 200rpx;
+  height: 200rpx;
+  margin-top: 50px;
+  border-radius: 50%;
+}
+.userName{
+  flex-direction: row;
+  width: 75%;
+  height: 50px;
+  margin-top: 20px;
+  display:flex;
+  align-items: center;
+  border-bottom:  1px    double  #E4E4E4; 
+}
+.userName input{
+  width: 100%;
+  margin-left: 20px;
+  margin-right:   50px;
+} 
+.userPwd{
+  flex-direction: row;
+  width: 75%;
+  height: 50px;
+  margin-top: 20px;
+  display:flex;
+  align-items: center;
+  border-bottom:  1px    double  #E4E4E4; 
+}
+.userPwd input{
+  width: 100%;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+ .iocn{
+  width: 25px;
+  height: 25px;
+}
+.showPwd{
+  height: 100%;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  width: 50px;
+}
+.showPwd .showIcon{
+ width: 25px;
+ height: 25px;
+}
+.forgetPwd{
+  color: #1ABC9C;
+  margin-top: 10px;
+  width: 75%;
+}
+.forgetPwd text{
+  float: right;
+  font-size: 16px;
+}
+button{
+  width: 75%;
+  background:#1ABC9C;
+  border-radius: 20px; 
+  margin-top: 20px;
+  border: 0;
+  color: white;
+}
+/*按钮去掉边框*/
+button:after{
+  border: none;
+}
+.lin{
+  flex-direction: row;
+ display: flex;
+ width: 75%;
+ align-items: center;
+ color: #9999A6;
+ margin-top: 20px;
+}
+.lin view{
+  background: #E4E4E4;
+  height: 1px;
+  width: 50%;
+  }
+.lin text{
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.createUser{
+  color: #1ABC9C;
+}

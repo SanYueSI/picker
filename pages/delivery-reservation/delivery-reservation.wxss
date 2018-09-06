@@ -1,0 +1,170 @@
+/* pages/deliveryReservation/deliveryReservation.wxss */
+
+page {
+  background: #eeeef3;
+}
+
+.bgimage {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: -1;
+}
+
+.view {
+  flex-direction: column;
+  display: flex;
+}
+
+.view-text {
+  padding-left: 15px;
+  color: #1890fe;
+  height: 40px;
+  border-bottom: 1px double #1890fe;
+  display: flex;
+  align-items: center;
+  justify-content: center left;
+  font-size: 14px;
+}
+
+.view1 {
+  margin-right: 20px;
+  width: 100%;
+  flex-direction: column;
+  display: flex;
+  background: white;
+}
+
+.view3 {
+  height: 42px;
+  display: flex;
+  margin-left: 15px;
+  margin-right: 15px;
+  align-items: center;
+  border-bottom: 1px double #eeeef3;
+  flex-direction: row;
+  font-size: 14px;
+}
+
+.view3 text {
+  color: #999;
+  width: 90px;
+}
+
+.view3 picker {
+  width: 90%;
+  margin-left: 17px;
+}
+
+.view3 picker view {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+
+.view3 picker text {
+  float: left;
+  font-size: 14px;
+  width: 100%;
+  color: #999;
+}
+
+.view3  image {
+  width: 15px;
+  margin-left: 10px;
+  height: 15px;
+}
+
+.item-view {
+  display: flex;
+  flex-direction: column;
+  height: 87px;
+  background: white;
+  margin-bottom: 10px;
+}
+
+.item-view1 {
+  display: flex;
+  flex-direction: row;
+  height: 50%;
+  align-items: center;
+  font-size: 14px;
+}
+
+.item-view2 {
+  display: flex;
+  flex-direction: row;
+  height: 50%;
+  align-items: center;
+  font-size: 14px;
+}
+
+.item-view1 .view1 {
+  width: 40%;
+  display: flex;
+  flex-direction: row;
+  padding-left: 15px;
+}
+
+.item-view1 .view2 {
+  width: 35%;
+  display: flex;
+  flex-direction: row;
+}
+
+.item-view1 .view2 .text-key2 {
+  color: #999;
+  width: 35%;
+  margin-right: 5px;
+}
+
+.item-view1 .text-value3 {
+  float: right;
+  width: 100%;
+  color: #42bfdb;
+  text-align: right;
+  margin-right: 15px;
+}
+
+.item-view2 .view1 {
+  width: 40%;
+  display: flex;
+  flex-direction: row;
+  padding-left: 15px;
+}
+
+.item-view2 .view2 {
+  width: 40%;
+  display: flex;
+  flex-direction: row;
+}
+
+.text-key {
+  color: #999;
+  border: 1px double blue;
+  width: 23%;
+  margin-right: 5px;
+}
+
+.text-value {
+  font-size: 14px;
+  color: black;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.text-value2 {
+  font-size: 14px;
+  width: 100%;
+  color: black;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.text-key3 {
+  color: red;
+}
+
+scroll-view {
+  height: 300px;
+}

@@ -1,0 +1,71 @@
+<!--pages/goods-apply-for/goods-apply-for.wxml-->
+<scroll-view scroll-y style="height:{{scrollHeight}}px;overflow: auto">
+  <view class='search-bar'>
+    <image src='../../images/goods-bg.png' class='content'></image>
+    <text class='info'>预约信息</text>
+    <view class='header'>
+      <view class='header-top'>
+        <view class='display big-goods'>品种大类</view>
+        <view class='display change-goods'>
+          选择品种大类
+          <image src='../../images/go.png'></image>
+        </view>
+        <view class='display warehouse'>仓库</view>
+        <view class='display change-warehouse'>
+          选择仓库
+          <image src='../../images/go.png'></image>
+        </view>
+      </view>
+      <view class='header-bottom'>
+        <view class='display tv_time'>预约时间</view>
+        <view class='display time'>2017年3月23日 18时-19时</view>
+        <view class='display go-img'>
+          <image src='../../images/go.png'></image>
+        </view>
+      </view>
+    </view>
+    <text class='info'>货物信息</text>
+    <view class='goods-info' wx:for="{{datas}}">
+      <view class='display goods-info-top'>
+        <view class='display tv-warehouse'>
+          {{item.warehouse}}
+        </view>
+        <view class='display in-warehouse'>
+          <input placeholder='点击输入仓库' focus='true'></input>
+        </view>
+        <view class='display tv-warehouse'>
+          {{item.varieties}}
+        </view>
+        <view class='display in-warehouse'>
+          <input placeholder='点击输入品种'></input>
+        </view>
+      </view>
+      <view class='display goods-info-bottom'>
+        <view class='display tv-warehouse'>
+          {{item.specifications}}
+        </view>
+        <view class='display in-warehouse'>
+          <input placeholder='点击输入规格'></input>
+        </view>
+        <view class='display tv-warehouse'>
+          {{item.weight}}
+        </view>
+        <view class='display in-warehouse'>
+          <input placeholder='点击输入量'></input>
+        </view>
+      </view>
+    </view>
+    <button class="btn-add" bindtap='addGoodsInfo'>继续添加</button>
+    <view class='position-flex'>
+      <view class='position-bottom'>
+        <view class='filings'>
+          <text>申请量:</text>
+          <text style='color:blue;margin-left:10px;'>90T</text>
+        </view>
+        <view class='filings'>
+          <button>确定</button>
+        </view>
+      </view>
+    </view>
+  </view>
+</scroll-view>

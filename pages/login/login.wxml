@@ -1,0 +1,34 @@
+<!--pages/newView/newView.wxml-->
+<view>
+  <view class='login'>
+    <image class="userinfo-avatar" src="../../images/my.png" background-size="cover"></image>
+    <view class='userName'>
+      <image class='iocn' src='../../images/my.png'></image>
+      <input focus='{{userFocus}}' type='text' adjust-position='true' bindconfirm='bindconfirm'
+        bindblur='bindblur'
+       placeholder='登录账号' confirm-type='next' />
+    </view>
+    <view class='userPwd'>
+      <image class='iocn' src='../../images/my.png'></image>
+      <input type='text' focus='{{pwdFocus}}' adjust-position='true' password='{{password}}' placeholder='登录密码' maxlength='16' 
+        bindblur='bindblurPwd'
+        bindconfirm='bindconfirmPwd' confirm-type='done' />
+      <view class='showPwd' bindtap='showPad'>
+        <image src='{{showPadImage}}' class='showIcon'></image>
+      </view>
+
+    </view>
+    <view class='forgetPwd'>
+      <text>忘记密码</text>
+    </view>
+    <button loading='{{loading}}' bindtap='login'>登录</button>
+    <view class='lin'>
+      <view/>
+      <text>  or  </text>
+      <view/>
+    </view>
+    <text class='createUser'>
+   创建账户
+   </text>
+  </view>
+</view>
